@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".login_Activity"
+    android:background="@drawable/airuni"
+    >
+
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="355dp"
+        android:layout_height="50dp"
+        android:autofillHints=""
+        android:background="@drawable/custom_edit_text_color_change"
+        android:drawableStart="@drawable/et_email_iconn_color_change"
+        android:drawableLeft="@drawable/et_email_iconn_color_change"
+        android:drawablePadding="30dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingHorizontal="10dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.686"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.327" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="355dp"
+        android:layout_height="50dp"
+        android:autofillHints=""
+        android:background="@drawable/custom_edit_text_color_change"
+        android:drawableStart="@drawable/et_pass_color_change"
+        android:drawableLeft="@drawable/et_pass_color_change"
+        android:drawablePadding="30dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingHorizontal="10dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_Login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.733"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etEmail"
+        app:layout_constraintVertical_bias="0.348" />
+
+    <Button
+        android:id="@+id/btn_Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:shadowColor="@color/black"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.733"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/etEmail"
+        app:layout_constraintVertical_bias="0.519" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
